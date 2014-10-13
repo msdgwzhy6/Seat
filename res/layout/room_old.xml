@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/logo_bg">
+
+ <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip" 
+            android:background="#6A5ACD">
+            <ImageView 
+                android:id="@+id/title_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/title_icon4545"/>
+            <ImageView 
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next"/>
+            <TextView 
+            	android:id="@+id/title_tv"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+            	android:layout_gravity="center_vertical"
+            	android:gravity="center_vertical"
+            	android:text="老图书馆 "
+            	android:textColor="#ffffff"
+            	android:textSize="20sp" />
+            </LinearLayout>
+            
+
+<!-- 四楼布局 -->
+
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:background="#5CACEE" 
+        android:layout_weight="1">
+        <TextView 
+            android:id="@+id/F4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:background="#5CACEE"
+            android:text="四楼"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/btn_1401"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/F4"
+            android:background="@drawable/room_button_selector"
+            android:text="自习阅览室"
+            android:textStyle="bold"
+            android:textColor="#8B008B"
+            android:textSize="25sp" />
+
+
+
+    </RelativeLayout>
+    <TextView 
+		android:layout_width="fill_parent"
+	   	android:layout_height="4dip"
+	    android:background="#FFEBCD"/> 
+
+<!-- 三楼布局 -->
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:background="#5CACEE" 
+        android:layout_weight="2">
+<!-- 根据layout_weight按比例划分，要去掉layout_hight -->
+        <TextView 
+            android:id="@+id/F3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:background="#5CACEE"
+            android:text="三楼"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            />
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/F3"
+            android:orientation="vertical" >
+        <Button
+            android:id="@+id/btn_1303"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"           
+            android:background="@drawable/room_button_selector" 
+            android:text="外文借阅处"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#8B008B"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv3"
+			android:layout_width="fill_parent"
+	   		android:layout_height="2dip"
+			android:background="#ffffff"/>
+         <Button
+            android:id="@+id/btn_1302"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"   
+            android:layout_alignLeft="@+id/btn_1303"            
+            android:layout_below="@+id/tv3"
+            android:background="@drawable/room_button_selector" 
+            android:text="教师阅览室"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#8B008B"
+            android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView 
+    	android:layout_below="@+id/btn_1401"
+		android:layout_width="fill_parent"
+	   	android:layout_height="4dip"
+	    android:background="#FFEBCD"/> 
+	    
+    <!-- 二楼布局 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:background="#5CACEE" 
+        android:layout_weight="2">
+
+        <TextView 
+            android:id="@+id/F2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:background="#5CACEE"
+            android:text="二楼"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+            
+         <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/F2"
+            android:orientation="vertical" >
+
+             <Button
+                 android:id="@+id/btn_1203"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:background="@drawable/room_button_selector"
+                 android:text="法学阅览室"
+                 android:textStyle="bold"
+                 android:textColor="#8B008B"
+                 android:textSize="25sp" 
+                 android:layout_weight="1"/>
+
+        	<TextView
+            	android:id="@+id/tv2"
+				android:layout_width="fill_parent"
+	   			android:layout_height="2dip"
+	   			android:background="#ffffff"/>
+         	<Button
+            	android:id="@+id/btn_1202"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:background="@drawable/room_button_selector" 
+            	android:text="社科借阅处"
+            	android:textStyle="bold"
+            	android:textSize="25sp"
+            	android:textColor="#8B008B"
+            	android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    
+</LinearLayout>

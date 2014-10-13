@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chun"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#6A5ACD" >
+
+        <ImageView
+            android:id="@+id/title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/title_icon4545" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/next" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:text="请选择图书馆 "
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="4dip"
+        android:background="#EEDD82" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/old_lib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/old_lib"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/old_lib"
+            android:layout_alignTop="@id/old_lib"
+            android:background="@drawable/lib_tv_selector"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:text="老图书馆"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="4dip"
+        android:background="#EEDD82" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/dig_lib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dig_lib"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/dig_lib"
+            android:layout_alignTop="@id/dig_lib"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/lib_tv_selector"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:text="数字图书馆"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/chun">
+ <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip" 
+            android:background="#6A5ACD">
+            <ImageView 
+                android:id="@+id/title_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/title_icon4545"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next"/>
+            <TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+				android:layout_marginLeft="3dip"
+            	android:layout_gravity="center_vertical"
+            	android:gravity="center_vertical"
+            	android:text="数字图书馆"
+            	android:textColor="#ffffff"
+            	android:textSize="20sp" />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next"/>
+            <TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+				android:layout_marginLeft="3dip"
+            	android:layout_gravity="center_vertical"
+            	android:gravity="center_vertical"
+            	android:text="一楼自习阅览室"
+            	android:textColor="#ffffff"
+            	android:textSize="18sp" />
+            </LinearLayout>
+            
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/chun">
+ 
+<!-- 数图2107四楼阅览室 -->
+<!-- 
+
+	101~110    -107
+	
+	202~210    
+	
+	301~310    -3011~3013  -302
+	
+	401~410	   -4011~4013
+	
+	501~510    -5011~5013
+	
+	
+	9+9+8.5+9.5+9.5=45.5    47
+	
+	45.5*6=273
+
+ -->
+
+            
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:stretchColumns="0,1,2">
+<!-- 第1行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button
+                android:id="@+id/btn_101" 
+                android:layout_width="0dip"
+                android:layout_weight="1" android:layout_height="60dip"
+                
+                android:text="101"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/btn_102" 
+                android:layout_width="0dip"
+                android:layout_weight="1" android:layout_height="60dip"
+                
+                android:text="102"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/>
+            <Button 
+                android:id="@+id/btn_103"
+                android:layout_width="0dip"
+                android:layout_weight="1" android:layout_height="60dip"
+                
+                android:text="103"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/>
+        </TableRow>
+<!-- 第2行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button 
+                android:id="@+id/btn_104"
+                android:layout_width="0dip"
+                android:layout_weight="1" android:layout_height="60dip"
+                
+                android:text="104"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/>
+            <Button 
+                android:id="@+id/btn_105"
+                android:layout_width="0dip"
+                android:layout_weight="1" android:layout_height="60dip"
+                
+                android:text="105"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/>
+            <Button 
+                android:id="@+id/btn_106"
+                android:layout_width="0dip"
+                android:layout_weight="1" android:layout_height="60dip"
+                
+                android:text="106"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/>
+        </TableRow>        
+<!-- 第3行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button 
+                android:id="@+id/btn_108"
+                android:layout_width="0dip"
+                android:layout_weight="1" android:layout_height="60dip"
+                
+                android:text="108"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/>
+            <Button 
+                android:id="@+id/btn_109"
+                android:layout_width="0dip"
+                android:layout_weight="1" android:layout_height="60dip"
+                
+                android:text="109"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/><Button android:id="@+id/btn_110" android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" android:text="110" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>
+<!-- 第4行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            
+        	<Button 
+        	    android:id="@+id/btn_202" 
+        	    android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+        	     
+        	    android:text="202" 
+        	    android:textColor="#8B636C" 
+        	    android:textSize="30sp" /><Button android:id="@+id/btn_203" android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" android:text="203" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_204" android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" android:text="204" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>        
+
+ <!-- 第5行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+        	
+        	
+        	<Button 
+        	    android:id="@+id/btn_205" 
+        	    android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+        	     
+        	    android:text="205" 
+        	    android:textColor="#8B636C" 
+        	    android:textSize="30sp" /><Button android:id="@+id/btn_206" android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" android:text="206" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_207" android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" android:text="207" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>
+   
+ <!-- 第6行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            
+            
+            
+            
+            <Button 
+                android:id="@+id/btn_208" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                 
+                android:text="208" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" /><Button android:id="@+id/btn_209" android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" android:text="209" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_210" android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" android:text="210" android:textColor="#8B636C" android:textSize="30sp" />  
+        </TableRow>
+ <!-- 第7行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            
+            
+            <Button 
+                android:id="@+id/btn_301" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                 
+                android:text="301" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" /><Button android:id="@+id/btn_303" android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" android:text="303" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_304" android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" android:text="304" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>        
+ <!-- 第9行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button 
+                android:id="@+id/btn_305"
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                
+                android:text="305" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_306"
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip"
+                
+                android:text="306"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/>
+            <Button 
+                android:id="@+id/btn_307" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                
+                android:text="307" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+        </TableRow>        
+ <!-- 第10行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button 
+                android:id="@+id/btn_308" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                 
+                android:text="308" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_309"
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip"
+                
+                android:text="309"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/>
+            <Button 
+                android:id="@+id/btn_310" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                
+                android:text="310" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+        </TableRow>
+ <!-- 第11行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button 
+                android:id="@+id/btn_401" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                
+                android:text="401" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_402" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                 
+                android:text="402" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_403" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                
+                android:text="403" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+        </TableRow>
+ <!-- 第12行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button 
+                android:id="@+id/btn_404" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+               
+                android:text="404" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_405" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                 
+                android:text="405" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_406" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                 
+                android:text="406" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+        </TableRow>
+ <!-- 第13行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button android:id="@+id/btn_407" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                 
+                android:text="407" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_408" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                
+                android:text="408" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_409" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                 
+                android:text="409" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            
+            
+        </TableRow>
+
+ <!-- 第14行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">                
+        
+        	<Button 
+        	    android:id="@+id/btn_410" 
+        	    android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+        	   
+        	    android:text="410" 
+        	    android:textColor="#8B636C" 
+        	    android:textSize="30sp" />
+        	<Button 
+        	    android:id="@+id/btn_501" 
+        	    android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+        	  
+        	    android:text="501" 
+        	    android:textColor="#8B636C" 
+        	    android:textSize="30sp" />
+        	<Button 
+        	    android:id="@+id/btn_502" 
+        	    android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+        	
+        	    android:text="502" 
+        	    android:textColor="#8B636C" 
+        	    android:textSize="30sp" />
+        </TableRow>
+<!-- 第15行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button 
+                android:id="@+id/btn_503" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+             
+                android:text="503" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_504" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+         
+                android:text="504" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_505" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+             
+                android:text="505" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+        </TableRow>
+ <!-- 第16行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button 
+                android:id="@+id/btn_506" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+             
+                android:text="506" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_507" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+               
+                android:text="507" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_508" 
+                android:layout_width="0dip" android:layout_weight="1" android:layout_height="60dip" 
+                
+                android:text="508" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+        </TableRow>
+ <!-- 第18行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button 
+                android:id="@+id/btn_509" 
+                android:layout_width="0dip"
+                android:layout_weight="1" android:layout_height="60dip" 
+                
+                android:text="509" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" />
+            <Button 
+                android:id="@+id/btn_510" 
+                android:layout_width="0dip"
+                android:layout_height="60dip"
+                android:layout_weight="1" 
+                android:text="510" 
+                android:textColor="#8B636C" 
+                android:textSize="30sp" /> 
+                <TextView 
+                    android:layout_width="0dip"
+               
+                android:layout_weight="1" android:layout_height="60dip" />
+        </TableRow>                	
+        </TableLayout>
+
+</ScrollView>
+
+</LinearLayout>
+

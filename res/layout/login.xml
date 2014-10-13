@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logo_bg" >
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="45dip"
+        android:layout_height="40dip"
+        android:layout_gravity="top"
+        android:background="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_menu"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:text="重邮图书馆订座"
+        android:textColor="#FAF0E6"
+        android:textSize="32sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dip">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="1dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:background="@drawable/rounded_edittext_name"
+            android:gravity="center_vertical"
+            android:hint="@string/stuId"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColorHint="#757575"
+            android:textSize="20sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/username"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/rounded_edittext_pwd"
+            android:hint="@string/pwd"
+            android:inputType="textPassword"
+            android:maxLines="200"
+            android:paddingLeft="10dp"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_below="@id/password"
+            android:layout_marginTop="20dip"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:background="@drawable/login_button_selector"
+                android:gravity="center"
+                android:shadowColor="#ffffff"
+                android:shadowDx="50"
+                android:shadowDy="50"
+                android:shadowRadius="50"
+                android:text="@string/login"
+                android:textColor="#525252"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <CheckBox
+            android:id="@+id/cb_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_below="@id/rl"
+            android:layout_marginTop="25dip"
+            android:button="@drawable/checkbox"
+            android:gravity="center_vertical"
+            android:text="@string/remember_pwd"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/chun" >
+    <TextView 
+        android:id="@+id/tv_help"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="6"
+        android:layout_marginTop="30dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="30dip"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_selector"
+        android:gravity="left"
+        android:padding="5dip"
+        android:text="1.预订座位前请确认已正常连接登录重邮校园网，如WIFI-CQUPT；\n\n2.图书馆预订系统账号为统一识别码，密码默认为身份证后六位。\n\n3.座位预订系统于每日12：30开放，如时间有变，以图书馆所公布信息为准；\n\n4.成功预订座位后，请于次日08:30前到达预订座位，否则预订无效。 "
+        android:textColor="#4F4F4F"
+        android:textSize="16sp"/>
+    
+
+
+   
+    
+
+</LinearLayout>

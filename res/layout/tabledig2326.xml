@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/chun">
+ <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip" 
+            android:background="#6A5ACD">
+            <ImageView 
+                android:id="@+id/title_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/title_icon4545"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next"/>
+            <TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+				android:layout_marginLeft="3dip"
+            	android:layout_gravity="center_vertical"
+            	android:gravity="center_vertical"
+            	android:text="数字图书馆"
+            	android:textColor="#ffffff"
+            	android:textSize="20sp" />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next"/>
+            <TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+				android:layout_marginLeft="3dip"
+            	android:layout_gravity="center_vertical"
+            	android:gravity="center_vertical"
+            	android:text="三楼自习借阅处"
+            	android:textColor="#ffffff"
+            	android:textSize="18sp" />
+            </LinearLayout>
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/chun">
+ 
+<!-- 数图2326三楼阅览室 -->
+<!-- 
+	102-114  -106~109
+	
+	201-214
+	
+	301-305
+	
+	
+	9+14+5=28
+	
+	28*6=168
+ -->
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:stretchColumns="0,1,2">
+<!-- 第1行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            <Button
+                android:id="@+id/btn_102" 
+                android:layout_width="0dip"
+                android:layout_weight="1" 
+                android:layout_height="60dip"
+                android:text="102"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/>
+            <Button 
+                android:id="@+id/btn_103"
+                android:layout_width="0dip"
+                android:layout_weight="1" 
+                android:layout_height="60dip"
+                android:text="103"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/>
+        	<Button 
+            	android:id="@+id/btn_104" 
+            	android:layout_width="0dip"
+            	android:layout_weight="1"  
+            	android:layout_height="60dip" 
+            	android:text="104" 
+            	android:textColor="#8B636C" 
+            	android:textSize="30sp" />
+        </TableRow>
+<!-- 第2行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            
+            <Button 
+                android:id="@+id/btn_105"
+                android:layout_width="0dip"
+                android:layout_weight="1" 
+                android:layout_height="60dip"
+                android:text="105"
+                android:textColor="#8B636C"
+                android:textSize="30sp"/><Button android:id="@+id/btn_110" android:layout_width="0dip"  android:layout_weight="1"  android:layout_height="60dip" android:text="110" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_111" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="111" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>        
+<!-- 第3行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+        	<Button android:id="@+id/btn_112" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="112" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_113" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="113" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_114" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="114" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>
+<!-- 第4行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">      
+            
+            
+        	<Button android:id="@+id/btn_201" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="201" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_202" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="202" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_203" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="203" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>        
+ <!-- 第5行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            
+            
+            
+        	<Button android:id="@+id/btn_204" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="204" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_205" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="205" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_206" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="206" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>
+ <!-- 第6行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            
+            
+            
+        	<Button android:id="@+id/btn_207" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="207" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_208" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="208" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_209" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="209" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>
+   
+ <!-- 第7行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            
+            
+            
+        	<Button android:id="@+id/btn_210" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="210" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_211" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="211" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_212" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="212" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>
+ <!-- 第8行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            
+            
+            
+        	<Button android:id="@+id/btn_213" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="213" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_214" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="214" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_301" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="301" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>        
+ <!-- 第9行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            
+            
+            
+        	<Button android:id="@+id/btn_302" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="302" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_303" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="303" android:textColor="#8B636C" android:textSize="30sp" /><Button android:id="@+id/btn_304" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="304" android:textColor="#8B636C" android:textSize="30sp" />
+        </TableRow>        
+ <!-- 第10行 -->        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dip">
+            
+            
+            
+        	<Button android:id="@+id/btn_305" android:layout_width="0dip" android:layout_weight="1"  android:layout_height="60dip" android:text="305" android:textColor="#8B636C" android:textSize="30sp" />
+        <TextView 
+                    android:layout_width="0dip"
+                android:layout_height="60dip"
+                android:layout_weight="1" />
+        <TextView 
+                    android:layout_width="0dip"
+                android:layout_height="60dip"
+                android:layout_weight="1" />
+        </TableRow>        
+         
+        
+
+        </TableLayout>
+
+</ScrollView>
+
+</LinearLayout>

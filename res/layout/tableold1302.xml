@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/chun">
+ <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip" 
+            android:background="#6A5ACD">
+            <ImageView 
+                android:id="@+id/title_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/title_icon4545"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next"/>
+            <TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+				android:layout_marginLeft="3dip"
+            	android:layout_gravity="center_vertical"
+            	android:gravity="center_vertical"
+            	android:text="老图书馆"
+            	android:textColor="#ffffff"
+            	android:textSize="20sp" />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next"/>
+            <TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+				android:layout_marginLeft="3dip"
+            	android:layout_gravity="center_vertical"
+            	android:gravity="center_vertical"
+            	android:text="三楼教师阅览室"
+            	android:textColor="#ffffff"
+            	android:textSize="18sp" />
+            </LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" 
+    android:background="@drawable/chun">
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="该阅览室暂不支持预订"
+        android:textSize="30sp"/>
+</LinearLayout>
+</LinearLayout>
